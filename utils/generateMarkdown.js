@@ -43,21 +43,21 @@ async function generateMarkdown(response) {
 
   *[Installation](#installation)
 
-  * [Usage](#usage)
+  *[Usage](#usage)
   
-  * [Test](#test)
+  *[Test](#test)
 
-  * [Contributions](#contributions)
+  *[Contributions](#contributions)
 
-  * [Contact](#contact)
+  *[Contact](#contact)
 
-  * [License](#license)
+  *[License](#license)
 
-  * [GitHub Nane](#githubname)
+  *[GitHub Nane](#githubname)
 
-  * [GitHubRepo](#githubrepo)
+  *[GitHubRepo](#githubrepo)
 
-  * [Images](#images)
+  *[Images](#images)
   
   ## Installation
   ${response.install}
