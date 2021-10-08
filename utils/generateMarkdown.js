@@ -7,9 +7,7 @@ function renderLicenseBadge(license) {
          break;
     case 'ISC':
      return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
-    
-      break;
-
+          break;
     case 'MPL':
      return`//[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
        break;
@@ -20,28 +18,59 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+
+function renderLicenseLink(license) {
+  switch(license) {
+    case 'MIT' :
+     return `(https://opensource.org/licenses/MIT)`
+         break;
+    case 'ISC':
+     return `(https://opensource.org/licenses/ISC)`
+        break;
+    case 'MPL':
+     return`(https://opensource.org/licenses/MPL-2.0)`
+       break;
+    default:
+      return 'No'
+      break;
+  }
+}
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+  switch(license) {
+    case 'MIT' :
+     return 'No'
+         break;
+    case 'ISC':
+     return 'No'
+        break;
+    case 'MPL':
+     return 'No'
+       break;
+    default:
+      return 'No'
+      break;
+  }
 }
 
 // TODO: Create a function to generate markdown for README
 async function generateMarkdown(response) {
-  console.log(response)
-  var license = await renderLicenseBadge(response.license)
-  return `# ${response.title}
+  let license = await renderLicenseBadge(response.license)
+  let licenseLink =  await renderLicenseLink(response.license)
+  let licenseSection = await renderLicenseSection(response.license)
 
+  return ` # ${response.title} 
+____
   ## ${license} 
-  
+   
   ## ${response.desc}
-  
+____  
   ## Table of Contents
-
-  *[Installation](#installation)
+____
+  [Installation](#installation)
 
   *[Usage](#usage)
   
@@ -58,7 +87,7 @@ async function generateMarkdown(response) {
   *[GitHubRepo](#githubrepo)
 
   *[Images](#images)
-  
+____  
   ## Installation
   ${response.install}
 
@@ -76,6 +105,9 @@ async function generateMarkdown(response) {
     
   ### License
   ${license}
+  ${licenseLink}
+  ${licenseSection}
+
    
   ### GitHub Name
   ${response.GitHubName}

@@ -1,43 +1,43 @@
- # Readme Generator 
-____
+# Readme Generator  
+___
   ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-   
-  ## Creates preformatted README files in md format.
-____  
-  ## Table of Contents
-____
-  [Installation](#installation)
-
-  *[Usage](#usage)
   
-  *[Test](#test)
+  ## Generates preformatted Readme files.
+ ____ 
+  ## Table of Contents
+  -----
+  *  [Installation](#installation)
 
-  *[Contributions](#contributions)
+  * [Usage](#usage)
+  
+  * [Test](#test)
 
-  *[Contact](#contact)
+  * [Contributions](#contributions)
 
-  *[License](#license)
+  * [Contact](#contact)
 
-  *[GitHub Nane](#githubname)
+  * [License](#license)
 
-  *[GitHubRepo](#githubrepo)
+  * [GitHub Nane](#githubname)
 
-  *[Images](#images)
-____  
+  * [GitHubRepo](#githubrepo)
+
+  * [Images](#images)
+  
   ## Installation
-  10/07/2021
+  10/07/21
 
   ## Usage
-  
+  Daily
 
   ## Test
-  
+  yes
 
   ## Contributions
-  
+  Saventa
     
   ###  Contact
-  
+  When are you deplying to the public?
     
   ### License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
