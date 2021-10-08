@@ -52,4 +52,6 @@ ____
    https://github.com/ptantsidis/ReadMeGenerator.git
 
   ### Images  
-  
+  ./assets/readGenerate.png
+  ### Video
+  https://watch.screencastify.com/v/xxalFNVebbt8392yqY5V
